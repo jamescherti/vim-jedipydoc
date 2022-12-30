@@ -22,7 +22,7 @@ Contents                                *jedipydoc-contents*
 
 Jedipydoc is a Vim plugin that allows showing the Pydoc documentation:
 - In a new tab (Default),
-- or in a horizontal split (same as Jedi-vim).
+- or in a horizontal split.
 
 ==============================================================================
 2. Requirements                                         *jedipydoc-requirements*
@@ -41,7 +41,7 @@ Default: <Leader>K                           Show pydoc documentation
 
 This shows the pydoc documentation for the item currently under the cursor.
 The documentation is opened in a horizontally split buffer. The height of this
-buffer is controlled by `g:jedipydoc_max_doc_height` (set by default to 30).
+buffer is controlled by `g:jedi#pydoc_max_doc_height` (set by default to 30).
 
 ==============================================================================
 5. Configuration                                       *jedipydoc-configuration*
@@ -56,7 +56,7 @@ plugin.
                                                   *b:jedipydoc_way_to_open_documentation*
 
 This option allows choosing how Jedipydoc shows the pydoc documentation when
-the user presses the '<Leader>K' key (The key mapping can be changed with the option
+the user presses '<Leader>K' (The key mapping can be changed with the option
 |g:jedipydoc_documentation_command|).
 
 split  Open the documentation in a horizontal split

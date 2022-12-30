@@ -1,23 +1,22 @@
 ##################################################################################
-vim-jedipydoc - Show the Pydoc/Python Documentation of the item under the cursor
+vim-jedipydoc - Show the Pydoc/Python documentation for the item under the cursor
 ##################################################################################
 
-Jedipydoc is a Vim plugin that allows showing the Pydoc documentation:
-- In a new tab (Default),
-- or in a horizontal split.
+Jedipydoc is a Vim plugin that allows showing the Pydoc documentation: In a new tab (default) or in a horizontal split.
 
 Default key mapping: ``<Leader>K``.
 
+Vim-jedipydoc Git repository: https://github.com/jamescherti/vim-jedipydoc
+
 Author and license
 ===================
-- Author: `James Cherti <https://www.jamescherti.com>`
-- Jedipydoc GitHub repository: https://github.com/jamescherti/vim-jedipydoc
+- Author: `James Cherti <https://www.jamescherti.com>`_
 - License: MIT
 
 Requirements
 ============
 
-Jedipydoc requires `Jedi-vim <https://github.com/davidhalter/jedi-vim>`.
+Jedipydoc requires the Vim plugin `Jedi-vim <https://github.com/davidhalter/jedi-vim>`_.
 
 Change the default key mapping
 ==============================

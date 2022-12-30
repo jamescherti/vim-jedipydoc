@@ -57,8 +57,9 @@ function! jedipydoc#show_documentation() abort
     setlocal foldlevel=200 " do not fold in __doc__
 
     if l:way_to_open_documentation ==# 'split'
-        if l:doc_lines > g:jedipydoc_max_doc_height " max lines for plugin
-            let l:doc_lines = g:jedipydoc_max_doc_height
+        let l:doc_height= get(g:, 'jedi#max_doc_height', 30)
+        if l:doc_lines > l:doc_height " max lines for plugin
+            let l:doc_lines = l:doc_height
         endif
         execute 'resize '.l:doc_lines
     endif
