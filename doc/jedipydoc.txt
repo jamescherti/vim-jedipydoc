@@ -27,7 +27,7 @@ Jedipydoc is a Vim plugin that allows showing the Pydoc documentation:
 ==============================================================================
 2. Requirements                                         *jedipydoc-requirements*
 
-Jedipydoc requires the Vim plugin Jedi-vim .
+Jedipydoc requires the Vim plugin Jedi-vim.
 
 It can be downloaded the repository:
 https://github.com/davidhalter/jedi-vim

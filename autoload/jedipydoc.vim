@@ -7,7 +7,8 @@ scriptencoding utf-8
 
 function! jedipydoc#show_documentation() abort
     if !exists(':JediDebugInfo')
-        echoerr 'Jedipydoc requires the Vim plugin Jedi-vim: https://github.com/davidhalter/jedi-vim'
+        echoerr 'Jedipydoc requires the Vim plugin Jedi-vim: ' .
+            \ 'https://github.com/davidhalter/jedi-vim'
         return
     endif
 

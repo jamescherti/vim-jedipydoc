@@ -2,9 +2,11 @@
 " Maintainer: James Cherti
 " URL: https://github.com/jamescherti/vim-jedipydoc
 " License: MIT
-"
-" This part of the software is just the vim interface. The really big deal is
-" the Jedi Python library.
+
+if exists('g:loaded_jedipydoc') || &compatible || v:version < 700
+  finish
+endif
+let g:loaded_jedipydoc = 1
 
 let g:jedipydoc_documentation_command =
     \ get(g:, 'jedipydoc_documentation_command', '<Leader>K')
