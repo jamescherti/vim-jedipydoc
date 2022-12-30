@@ -1,0 +1,72 @@
+*jedipydoc.txt*
+Show the Pydoc/Python documentation for the item under the cursor.
+
+Author: James Cherti (website: https://www.jamescherti.com )
+GitHub repository: https://github.com/jamescherti/vim-jedipydoc
+License: MIT
+
+==============================================================================
+Contents                                *jedipydoc-contents*
+
+1. Introduction                         |jedipydoc-introduction|
+2. Requirements                         |jedipydoc-requirements|
+3. Key bindings                         |jedipydoc-keybindings|
+    3.1. Show documentation             |g:jedipydoc_documentation_command|
+4. Configuration                        |jedipydoc-configuration|
+    4.1. way_to_open_documentation      |g:jedipydoc_way_to_open_documentation|
+                                        |b:jedipydoc_way_to_open_documentation|
+5. License                              |jedipydoc-license|
+
+==============================================================================
+1. Introduction                                         *jedipydoc-introduction*
+
+Jedipydoc is a Vim plugin that allows showing the Pydoc documentation:
+- In a new tab (Default),
+- or in a horizontal split (same as Jedi-vim).
+
+==============================================================================
+2. Requirements                                         *jedipydoc-requirements*
+
+Jedipydoc requires the Vim plugin Jedi-vim .
+
+It can be downloaded the repository:
+https://github.com/davidhalter/jedi-vim
+
+==============================================================================
+3. Key Bindings                                          *jedipydoc-keybindings*
+
+------------------------------------------------------------------------------
+3.1. `g:jedipydoc_documentation_command`       *g:jedipydoc_documentation_command*
+Default: <Leader>K                           Show pydoc documentation
+
+This shows the pydoc documentation for the item currently under the cursor.
+The documentation is opened in a horizontally split buffer. The height of this
+buffer is controlled by `g:jedipydoc_max_doc_height` (set by default to 30).
+
+==============================================================================
+5. Configuration                                       *jedipydoc-configuration*
+
+Note: You currently have to set these options in your .vimrc. Setting them in
+an ftplugin (e.g. ~/.vim/ftplugin/python/jedipydoc-settings.vim) will not work
+because jedipydoc is not set up as an filetype plugin, but as a "regular"
+plugin.
+
+------------------------------------------------------------------------------
+5.1. `g:jedipydoc_way_to_open_documentation`        *g:jedipydoc_way_to_open_documentation*
+                                                  *b:jedipydoc_way_to_open_documentation*
+
+This option allows choosing how Jedipydoc shows the pydoc documentation when
+the user presses the '<Leader>K' key (The key mapping can be changed with the option
+|g:jedipydoc_documentation_command|).
+
+split  Open the documentation in a horizontal split
+tab    Open the documentation in a new tab
+
+Default: tab
+
+==============================================================================
+6. License                                                  *jedipydoc-license*
+
+Jedipydoc is licensed with the MIT license.
+
+ vim: textwidth=78 et filetype=help:norightleft:
